@@ -14,6 +14,11 @@ Step 6 - Check the data types of the columns and correct if there is datatype mi
 
 Step 7 - Impute missing values
 
+         Step 7.1 - Plot of missing values
+         
+         import missingno as msno
+         msno.bar(df)
+
 Step 8 - Plot a correlation heatmap
 
          plt.figure(figsize = (20, 12))
@@ -34,10 +39,15 @@ Step 9 - Drop the label from the dataset
 
          X = df.drop('label', axis = 1)
          y = df['label']
+         
+Step 10 - Get description of the dataset.
 
-Step 10 - Check imbalance class and correct it
+Step 11 - Check imbalance class and correct it
     
-    Step 10.1 - Class weights in the models
+    fig= px.histogram(df, x='label',color='label', barmode='group')
+    fig.show()
+    
+    Step 11.1 - Class weights in the models
     
     Most of the machine learning models provide a parameter called class_weights. For example, in a random forest classifier using, class_weights we can specify higher     weight for the minority class using a dictionary.
     
@@ -50,10 +60,8 @@ Step 10 - Check imbalance class and correct it
     class_weights = compute_class_weight('balanced', np.unique(y), y)
     
                         (or)
-    Step 10.2 - Treat the problem as anomaly detection
+    Step 11.2 - Treat the problem as anomaly detection
     
     Anomaly detection is the identification of rare items, events or observations which raise suspicions by differing significantly from the majority of the data. 
-
-
     
 
