@@ -40,14 +40,18 @@ Step 9 - Drop the label from the dataset
          X = df.drop('label', axis = 1)
          y = df['label']
          
-Step 10 - Get description of the dataset.
+Step 10 - Get description of the dataset
 
-Step 11 - Check imbalance class and correct it
+Step 11 - Plot categorical columns
+
+Step 12 - Analyze outliers
+
+Step 13 - Check imbalance class and correct it
     
     fig= px.histogram(df, x='label',color='label', barmode='group')
     fig.show()
     
-    Step 11.1 - Class weights in the models
+    Step 13.1 - Class weights in the models
     
     Most of the machine learning models provide a parameter called class_weights. For example, in a random forest classifier using, class_weights we can specify higher     weight for the minority class using a dictionary.
     
@@ -60,7 +64,7 @@ Step 11 - Check imbalance class and correct it
     class_weights = compute_class_weight('balanced', np.unique(y), y)
     
                         (or)
-    Step 11.2 - Treat the problem as anomaly detection
+    Step 13.2 - Treat the problem as anomaly detection
     
     Anomaly detection is the identification of rare items, events or observations which raise suspicions by differing significantly from the majority of the data. 
     
