@@ -6,7 +6,7 @@ Step 2 - Delete columns from the dataset which are fully empty
 
 Step 3 - Delete duplicate rows from the dataset
 
-Step 4 - Delete columns that have more than 50% of missing values. The recommended missing values is 20 - 30%
+Step 4 - Delete columns that have more than 20 - 30% of missing values.
 
 Step 5 - Delete columns that are of type 'ID'
 
