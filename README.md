@@ -6,9 +6,9 @@ Step 2 - Delete columns from the dataset which are fully empty
 
 Step 3 - Delete duplicate rows from the dataset
 
-Step 4 - Delete columns that have more than 20 - 30% of missing values.
+Step 4 - Delete columns that have only single-values
 
-Step 5 - Delete columns that are of type 'ID'
+Step 5 - Delete static columns
 
 Step 6 - Check the data types of the columns and correct if there is datatype mismatch
 
@@ -35,7 +35,7 @@ Step 8 - Plot a correlation heatmap
          to_drop = [x for x in tri_df.columns if any(tri_df[x] < 0.85)]
          df = df.drop(to_drop, axis = 1)
          
-Step 9 - Drop the label from the dataset
+Step 9 - Drop target label from the dataset
 
          X = df.drop('label', axis = 1)
          y = df['label']
