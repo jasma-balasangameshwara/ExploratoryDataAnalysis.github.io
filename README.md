@@ -6,7 +6,7 @@ Step 2 - Delete columns from the dataset which are fully empty
 
 Step 3 - Delete duplicate rows from the dataset
 
-Step 4 - Delete columns that have only single-value
+Step 4 - Delete columns that have only single-value & columns with blanks and single-values.
 
 Step 5 - Delete static columns
 
