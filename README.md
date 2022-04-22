@@ -94,6 +94,9 @@ Step 14 - Check imbalance class and correct it
     from sklearn.linear_model import LogisticRegressionclf
     LogisticRegression(class_weight={0:1,1:10})
     
+Step 15 - Search for features with different names but similar data.
+
+Step 16 - Use np.where for feature engineering. 
     There is no one method to do this, and this should be constructed as a hyperparameter search problem for your particular problem. 
     
     from sklearn.utils.class_weight import compute_class_weight
