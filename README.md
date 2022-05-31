@@ -105,6 +105,10 @@ Step 16 - Use np.where for feature engineering.
                         (or)
     Step 14.2 - Treat the problem as anomaly detection
     
-    Anomaly detection is the identification of rare items, events or observations which raise suspicions by differing significantly from the majority of the data. 
+    Anomaly detection is the identification of rare items, events or observations which raise suspicions by differing significantly from the majority of the data.
+    
+Step 17 - Use Featuretools for Feature Engineering
+
+Step 18 - Use dtale, autoviz, swwetviz or Pandas Profiling
     
 
